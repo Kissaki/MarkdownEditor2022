@@ -342,7 +342,7 @@ namespace MarkdownEditor2022
         {
             bool useLightTheme = UseLightTheme();
             string css = ReadCSS(useLightTheme);
-            string mermaidJsParameters = $"{{ 'securityLevel': 'loose', 'theme': '{(useLightTheme ? "forest" : "dark")}', startOnLoad: false, flowchart: {{ htmlLabels: false }} }}";
+            string mermaidJsParameters = $"{{ 'securityLevel': 'loose', 'theme': '{(useLightTheme ? "forest" : "dark")}', startOnLoad: true, flowchart: {{ htmlLabels: false }} }}";
 
             string defaultHeadBeg = $@"
 <head>
